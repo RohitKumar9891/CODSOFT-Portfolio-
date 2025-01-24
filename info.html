@@ -3,59 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Rohit Kumar</h1>
-        <p>Web Developer | Problem Solver</p>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
 
-    <section id="about">
-        <img src="./Profile.jpg" alt="Profile Picture">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with experience in creating dynamic and responsive websites. My skills include HTML, CSS, JavaScript, and more.</p>
+    <section id="home" class="section">
+        <img src="passport.jpeg" alt="Profile Photo" class="profile-photo">
+        <h1>Hello! I'm Rohit</h1>
+        <h3>A Web Developer</h3>
+        <p class="about-me">
+            I specialize in crafting visually appealing and user-friendly web interfaces. With a strong focus on responsive design 
+            and performance, I strive to create seamless digital experiences. Currently pursuing a Diploma in Computer Engineering 
+            and a Bachelor of Arts, I bring creativity and attention to detail to every project I undertake.
+        </p>
+        <button class="resume-button" onclick="window.location.href='Resume.pdf'">Download Resume</button>
     </section>
-
-    <section id="skills">
+    
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Diploma in Computer Engineering</h3>
+            <p><strong>Delhi Skill and Entrepreneurship University (DSEU)</strong></p>
+            <p>Currently pursuing</p>
+        </div>
+        <div class="education-item">
+            <h3>Bachelor of Arts</h3>
+            <p><strong>University of Delhi, School of Open Learning (DU SOL)</strong></p>
+            <p>Currently pursuing</p>
+        </div>
+        <div class="education-item">
+            <h3>Senior Secondary (12th)</h3>
+            <p><strong>Central Board of Secondary Education (CBSE)</strong></p>
+            <p>Completed in 2022</p>
+        </div>
+        <div class="education-item">
+            <h3>Secondary (10th)</h3>
+            <p><strong>Central Board of Secondary Education (CBSE)</strong></p>
+            <p>Completed in 2020</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>MYSQL</li>
-        </ul>
+        <div class="skill-card skill-html">
+            <h3>HTML</h3>
+            <p>Experienced in creating structured web pages</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar"></div>
+            </div>
+        </div>
+        <div class="skill-card skill-css">
+            <h3>CSS</h3>
+            <p>Skilled in styling responsive websites</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar"></div>
+            </div>
+        </div>
+        <div class="skill-card skill-js">
+            <h3>JavaScript</h3>
+            <p>Proficient in dynamic web development</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar"></div>
+            </div>
+        </div>
+        <div class="skill-card skill-python">
+            <h3>Python</h3>
+            <p>Basic Knowledge in Python programming</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar"></div>
+            </div>
+        </div>
+        <div class="skill-card skill-java">
+            <h3>C</h3>
+            <p>Basic Knowledge in C programming</p>
+            <div class="skill-bar-container">
+                <div class="skill-bar"></div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project1">
-            <h3>Project 1</h3>
-            <img src="./image1.jpg" alt="Project 1" class="image1">
-            <p>It is a Expense Tracker where we can calculate and go through our all expenses which we have done. This Project I made with the help of my friends and It was my first project.</p>
+        <div class="projects-gallery">
+            <div class="project-item">
+                <img src="calculator.png" alt="Project 1">
+                <p>Calculator</p>
+            </div>
+            <div class="project-item">
+                <img src="game.png" alt="Project 2">
+                <p>Stone Paper Scissor Game</p>
+            </div>
+            <div class="project-item">
+                <img src="Vertual Assistant.png" alt="Project 3">
+                <p>Virtual Assistant</p>
+            </div>
+            <div class="project-item">
+                <img src="chatbot.png" alt="Project 4">
+                <p>Chatbot</p>
+            </div>
         </div>
-        <div class="project2">
-            <h3>Project 2</h3>
-            <img src="./image.jpg"  alt="Project 2" class="image2">
-            <p>It is a Google Translator which is used to translate many languages, words and sentences. In this project we have used Python,Html, css, javascript. My friends helped me to make this project.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="./resume.pdf" download>Download My Resume</a>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: rohkumar741@gmail.com</p>
-        <p>Phone: 9891878354</p>
+        <p>Email: rohit.kumar228187@gmail.com</p>
+        <p>Phone: +91 9891878354</p>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Rohit Kumar</p>
-    </footer>
 </body>
 </html>
